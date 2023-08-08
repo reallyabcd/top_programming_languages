@@ -111,6 +111,10 @@ pip install beautifulsoup4
 ```
 in your terminal or command prompt.
 
+for alter install
+```code
+pip install pytrends pandas
+```
 # QA
 You can save this script by any name you like, but make sure it has the .py extension. For example, you can save it as top_languages.py. To run this script, you need to open a terminal or command prompt and navigate to the folder where you saved the script. Then, you can type python top_languages.py and press enter. The script will print the top 10 programming languages based on the titles of the articles from my web search tool.
 
@@ -138,6 +142,7 @@ Save this script as top_languages.py or any name you like with the .py extension
 Open a terminal or command prompt and navigate to the folder where you saved the script.
 Type
 ```code
-python top_languages.py and press enter.
+python top_languages.py
 ```
+
 See the output of the script.😊
