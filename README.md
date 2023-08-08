@@ -118,9 +118,26 @@ You can save this script by any name you like, but make sure it has the .py exte
 # STEPS 
 Here are the steps to run this script:
 
-Download and install Python from [here].
-Install the requests and BeautifulSoup libraries by typing pip install requests and pip install beautifulsoup4 in your terminal or command prompt.
+Download and install Python on Local machine or on Terminal .
+
+```code
+sudo apt update && apt upgrade -y
+```
+
+Install the requests and BeautifulSoup libraries by typing
+```code
+pip install requests
+```
+ and 
+ ```code
+ pip install beautifulsoup4
+
+ ```
+in your terminal or command prompt.
 Save this script as top_languages.py or any name you like with the .py extension.
 Open a terminal or command prompt and navigate to the folder where you saved the script.
-Type python top_languages.py and press enter.
-See the output of the script.
+Type
+```code
+python top_languages.py and press enter.
+```
+See the output of the script.😊
