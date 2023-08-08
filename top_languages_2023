@@ -1,0 +1,26 @@
+import requests
+import json
+
+def get_top_languages():
+    url = 'https://api.github.com/search/repositories?q=language:python+language:java+language:javascript+language:c+++language:c%23+language:php+language:r+language:swift+language:kotlin+language:go&sort=stars&order=desc'
+    response = requests.get(url)
+    data = json.loads(response.text)
+    languages = {}
+
+    for item in data['items']:
+        language = item['language']
+        if language not in languages:
+            languages[language] = 0
+        languages[language] += 1
+
+    sorted_languages = sorted(languages.items(), key=lambda x: x[1], reverse=True)
+
+    print("Hello! Here are the top programming languages according to their popularity on GitHub:")
+    for i, language in enumerate(sorted_languages):
+        print(f"{i + 1}. {language[0]} ({language[1]} repositories)")
+
+while True:
+    get_top_languages()
+    choice = input("Do you want to see the results again? (y/n): ")
+    if choice.lower() != 'y':
+        break
